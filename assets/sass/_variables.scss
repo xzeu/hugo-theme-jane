@@ -5,13 +5,13 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Default';
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Rajdhani:wght@300;400&display=swap');
+$theme-color-config: 'Cobalt Blue';
 // Default theme color map
 $theme-color-map: (
   'Default': #c05b4d #f8f5ec,
   'Mint Green': #16982B #f5f5f5,
-  'Cobalt Blue': #0047AB #f0f2f5,
+  'Cobalt Blue': #0052d9 #f2f3ff,
   'Hot Pink': #FF69B4 #f8f5f5,
   'Dark Violet': #9932CC #f5f4fa
 );
@@ -55,10 +55,10 @@ $global-container-padding: 0 20px !default;
 $global-lineheight: 1.8 !default;
 
 // Font family of the site.
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+$global-font-family: 'JetBrains Mono', monospace,'Rajdhani','Barlow Condensed', microsoft yahei,sans-serif,'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
 
 // Serif font family of the site.
-$global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
+$global-serif-font-family: 'JetBrains Mono', monospace,'Rajdhani','Barlow Condensed',microsoft yahei, sans-serif, Athelas, STHeiti, Microsoft Yahei, serif !default;
 
 // Background color of the site.
 $global-background: $white !default;
@@ -79,7 +79,7 @@ $global-headings: (
 $logo-font-size: 36px !default;
 
 // Font family of the logo.
-$logo-font-family: cursive, LiSu, sans-serif !default;
+$logo-font-family: 'JetBrains Mono', monospace,'Rajdhani','Barlow Condensed',microsoft yahei,cursive, LiSu, sans-serif !default;
 
 // Margin of menu item.
 $menu-item-margin-left: 10px !default;
@@ -177,7 +177,7 @@ $code-color: #c7254e !default;
 $code-font-size: 0.9em !default;
 
 // Font family of the code.
-$code-font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, "Courier New",
+$code-font-family: 'JetBrains Mono', monospace,'Rajdhani','Barlow Condensed',microsoft yahei,Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, "Courier New",
  monospace !default;
 
 // Color of code highlight, solarized.
@@ -275,3 +275,22 @@ $categories-tags-link-margin: 5px 10px !default;
 
 // Font size of the category count
 $category-count-font-size: 12px !default;
+
+
+// ========== Admonition ========== //
+// Color list of admonition [$type $color $background-color, ... ]
+$admonition-color-list:
+  "note" #448aff rgba(68, 138, 255, 0.1),
+  "abstract" #00b0ff rgba(0, 176, 255, 0.1),
+  "info" #00b8d4 rgba(83, 211, 230, 0.1),
+  "tip" #00bfa5 rgba(0, 191, 165, 0.1),
+  "success" #00c853 rgba(0, 200, 83, 0.1),
+  "question" #64dd17 rgba(100, 221, 23, 0.1),
+  "warning" #ff9100 rgba(255, 145, 0, 0.1),
+  "failure" #ff5252 rgba(255, 82, 82, 0.1),
+  "danger" #ff1744 rgba(68, 138, 255, 0.1),
+  "bug" #f50057 rgba(255, 23, 68, 0.1),
+  "example" #651fff rgba(101, 31, 255, 0.1),
+  "quote" #9e9e9e rgba(159, 159, 159, 0.1),
+  !default;
+// ========== Admonition ========== //
